@@ -1,0 +1,47 @@
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Virtual environment
+.venv/
+env/
+venv/
+.env
+
+# Docker
+.dockerignore # This file itself should not be ignored, but often it lives alongside .gitignore
+docker-compose.yml # If you have local dev-specific compose files you don't want deployed
+# build/ # If Docker builds anything into a 'build' folder outside of a defined volume
+# .cache/ # Often created by pip or other tools during builds
+
+# Logs
+*.log
+log/
+
+# IDE-specific files
+.idea/             # JetBrains IDEs (PyCharm, IntelliJ)
+.vscode/           # VS Code (if you don't want shared settings)
+*.swp              # Vim swap files
+*.bak              # Backup files
+
+# Database files
+*.sqlite3
+*.db
+/data/             # Common directory for local database files or temporary data
+
+# Data files
+*.csv
+*.json
+*.xml
+
+# Environment variables
+.env
+.flaskenv
+
+# Local development specific files
+# These might include files created by linters, temporary files for debugging, etc.
+# Add anything here that is specific to YOUR local dev setup and should not be versioned.
+
+# Python test reports
+.coverage
+.pytest_cache/
